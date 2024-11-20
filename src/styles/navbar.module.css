@@ -1,0 +1,124 @@
+/* Sidebar */
+.sidebar {
+    background-color: #1e293b; /* Azul oscuro con un toque moderno */
+    color: #e2e8f0; /* Gray-100 */
+    width: 16rem;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .sidebar.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  .sidebar .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #60a5fa; /* Azul claro */
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav li button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    color: #e2e8f0;
+    transition: background-color 0.2s, color 0.2s;
+    text-align: left;
+  }
+  
+  .sidebar nav li button:hover {
+    background-color: #2563eb; /* Azul más claro */
+    color: #fff;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #f8fafc; /* Blanco moderno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  
+  .header button {
+    color: #64748b; /* Gray-500 */
+    transition: color 0.2s;
+  }
+  
+  .header button:hover {
+    color: #1e293b; /* Gray-800 */
+  }
+  
+  .header .logout {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #dc2626; /* Rojo */
+  }
+  
+  .header .logout:hover {
+    color: #b91c1c; /* Rojo oscuro */
+  }
+  
+  /* Main Content */
+  .mainContent {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f1f5f9; /* Gray-100 */
+    padding: 2rem;
+  }
+  
+  .mainContent .card {
+    max-width: 48rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .mainContent .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .mainContent .preview {
+    background-image: url('/placeholder.svg?height=300&width=500');
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
+  }
+  
+  .mainContent .preview .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: background-color 0.2s;
+  }
+  
+  .mainContent .preview .overlay:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  

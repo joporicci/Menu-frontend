@@ -1,0 +1,164 @@
+/* Contenedor principal */
+.container {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #007bff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+}
+
+.loginButton {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.loginButton:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Main */
+.main {
+  padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heroIcon {
+  width: 100px;
+  position: absolute; /* Permite posicionar el elemento en coordenadas específicas */
+  top: 0; /* Alinea el elemento con la parte superior de la pantalla */
+  left: 0; /* Alinea el elemento con el borde izquierdo de la pantalla */
+  margin-top: 10px; /* Elimina cualquier margen adicional */
+}
+
+.heroTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Steps Section */
+.steps {
+  margin-bottom: 2rem;
+}
+
+.stepsTitle {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.stepsList {
+  background-image: url('/public/menu-backk.jpg'); /* Agrega tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  padding: 30px;
+  color: #333; /* Color de texto oscuro para contraste */
+  font-family: 'Georgia', serif; /* Usar una tipografía tipo serif para darle un estilo de carta */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio entre los elementos */
+  text-align: center; /* Centrar texto */
+}
+
+.stepNumber {
+  font-weight: bold;
+  font-size: 1.2rem; /* Un poco más grande para la numeración */
+  margin-right: 10px; /* Espacio entre el número y el texto */
+}
+
+.stepsList li {
+  font-size: 1.1rem; /* Tamaño de texto ligeramente mayor */
+  margin: 10px 0; /* Espacio entre los pasos */
+}
+
+.stepsList h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+/* Benefits Section */
+.benefits {
+  margin-bottom: 2rem;
+}
+
+.benefitsTitle {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.benefitItem {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefitTitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.benefitDescription {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footerText {
+  margin: 0;
+}
+
+.supportLink {
+  color: white;
+  text-decoration: underline;
+  margin-left: 1rem;
+}
